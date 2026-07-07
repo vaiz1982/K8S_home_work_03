@@ -195,10 +195,30 @@ Returns a JSON payload with real data from MariaDB — meaning the backend succe
 
 
 
+<img width="1362" height="249" alt="Screenshot 2026-07-06 at 21 12 43" src="https://github.com/user-attachments/assets/e8696dd6-0b57-4c42-937b-309bd2127eb5" />
+
+
+
+<img width="1242" height="411" alt="Screenshot 2026-07-06 at 21 15 42" src="https://github.com/user-attachments/assets/f8acdc75-a606-483e-b83c-cf6430ff0b92" />
+
+
+
+<img width="1307" height="392" alt="Screenshot 2026-07-06 at 21 16 39" src="https://github.com/user-attachments/assets/b80601db-5830-447f-b5c9-99548eb2352b" />
 
 
 
 
+<img width="1538" height="397" alt="Screenshot 2026-07-06 at 21 18 16" src="https://github.com/user-attachments/assets/d2f928d0-bc20-4dc0-b3e3-914e24ebf588" />
+
+
+
+
+<img width="1564" height="221" alt="Screenshot 2026-07-06 at 21 21 23" src="https://github.com/user-attachments/assets/a378e9bf-253f-4901-a669-20db11fce17d" />
+
+
+
+
+<img width="811" height="802" alt="Screenshot 2026-07-06 at 21 31 30" src="https://github.com/user-attachments/assets/d02eba95-4ed8-467b-b155-96350bb45257" />
 
 
 
