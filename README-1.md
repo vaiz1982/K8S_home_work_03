@@ -1,0 +1,3 @@
+2 vCPU
+4 GiB
+20 GiB
