@@ -1,5 +1,21 @@
 # Cyberpunk DevOps — Kubernetes Deployment
 
+
+
+
+
+
+
+<img width="780" height="309" alt="Screenshot 2026-07-06 at 21 37 36" src="https://github.com/user-attachments/assets/d6ef5f31-d4ca-4175-828a-1f55de27d97a" />
+
+
+
+
+
+
+
+
+
 Deployment of the [cyberpunk-devops](https://github.com/AnastasiyaGapochkina01/cyberpunk-devops) application (FastAPI backend + MariaDB) on Kubernetes.
 
 ## Status: ✅ Deployed and verified on a real cluster
