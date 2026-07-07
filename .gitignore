@@ -1,0 +1,52 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+*.egg
+
+# --- Docker ---
+*.tar
+
+# --- Kubernetes / secrets ---
+# Никогда не коммитим реальные секреты с настоящими паролями/токенами
+k8s/*secret*.local.yaml
+k8s/**/secrets.yaml
+*.kubeconfig
+kubeconfig*.yaml
+.env
+.env.*
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Terraform (на случай если появится IaC) ---
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# --- Логи / temp ---
+*.log
+tmp/
+
+
+
+
+
+.bash_logout
+.bashrc
+.cache/
+.kube/
+.profile
+.ssh/
+.sudo_as_admin_successful
