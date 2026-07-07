@@ -224,3 +224,5 @@ Returns a JSON payload with real data from MariaDB — meaning the backend succe
 
 
 
+<img width="1552" height="680" alt="Screenshot 2026-07-06 at 21 10 57" src="https://github.com/user-attachments/assets/cc08fd25-3617-4133-a9cd-830b3e41a75e" />
+
