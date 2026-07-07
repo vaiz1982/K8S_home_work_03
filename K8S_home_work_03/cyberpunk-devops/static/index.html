@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk DevOps | Ростов-на-Дону</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Orbitron', monospace;
+            background: #0a0a0a;
+            color: #00ff41;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120,119,198,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,119,198,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120,219,255,0.3) 0%, transparent 50%);
+            animation: pulse 20s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.5;} }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .header { text-align: center; margin-bottom: 3rem; }
+        .title {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            background: linear-gradient(45deg, #00ff41, #00d4ff, #ff00ff, #00ff41);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite, glitch 2s infinite;
+            text-shadow: 0 0 20px #00ff41;
+        }
+        @keyframes gradient { 0%,100%{background-position:0% 50%;} 50%{background-position:100% 50%;} }
+        @keyframes glitch { 
+            0%,100%{transform:translate(0);}
+            20%{transform:translate(-2px,2px);}
+            40%{transform:translate(2px,-2px);}
+            60%{transform:translate(-2px,-2px);}
+            80%{transform:translate(2px,2px);}
+        }
+        .author-info {
+            background: rgba(0,0,0,0.7);
+            border: 2px solid #00ff41;
+            box-shadow: 0 0 30px #00ff41;
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow { 0%{box-shadow:0 0 20px #00ff41;} 100%{box-shadow:0 0 40px #00ff41,0 0 60px #00d4ff;} }
+        .bio { font-family: 'VT323', monospace; font-size: 1.3rem; line-height: 1.8; margin-bottom: 2rem; }
+        .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1rem; }
+        .skill { 
+            background: rgba(0,255,65,0.1); 
+            border: 1px solid #00ff41; 
+            padding: 1rem; 
+            border-radius: 5px; 
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .skill:hover { background: rgba(0,255,65,0.2); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,255,65,0.3); }
+        .api-links { text-align: center; margin-top: 3rem; }
+        .btn { 
+            display: inline-block; padding: 1rem 2rem; margin: 0.5rem; 
+            background: transparent; border: 2px solid #00d4ff; color: #00d4ff;
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+            transition: all 0.3s; position: relative; overflow: hidden;
+        }
+        .btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(0,212,255,0.4), transparent); transition: 0.5s; }
+        .btn:hover::before { left: 100%; }
+        .btn:hover { box-shadow: 0 0 20px #00d4ff; transform: translateY(-2px); }
+        @media (max-width: 768px) { .container { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">CYBERPUNK DEVOPS</h1>
+            <p style="font-size: 1.5rem; margin-top: 1rem;">Ростов-на-Дону | 2025</p>
+        </div>
+        <div class="author-info">
+            <div class="bio">
+                DevOps инженер с опытом автоматизации CI/CD, Kubernetes, Terraform.<br>
+                Создаю надежные инфраструктуры и обучаю команды современным практикам.<br>
+                Python | Go | Bash | AWS | Yandex Cloud | Prometheus | Grafana.
+            </div>
+            <div class="skills">
+                <div class="skill">🐳 Kubernetes</div>
+                <div class="skill">🔧 CI/CD Jenkins</div>
+                <div class="skill">☁️ Terraform IaC</div>
+                <div class="skill">📊 Prometheus</div>
+                <div class="skill">🐍 Python API</div>
+                <div class="skill">🐘 MariaDB</div>
+            </div>
+        </div>
+        <div class="api-links">
+            <a href="/health" class="btn">🩺 Health Check</a>
+            <a href="/courses" class="btn">📚 Курсы</a>
+            <a href="/docs" class="btn">📖 API Docs</a>
+        </div>
+    </div>
+</body>
+</html>
+

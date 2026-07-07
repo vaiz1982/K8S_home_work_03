@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mariadb-init-scripts
+  namespace: cyberpunk
+data:
+  01-schema.sql: |
+    CREATE TABLE IF NOT EXISTS courses (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      description VARCHAR(255) NOT NULL
+    );
+
+    INSERT INTO courses (name, description)
+    SELECT * FROM (SELECT 'Kubernetes для DevOps', 'Orchestration контейнеров') AS tmp
+    WHERE NOT EXISTS (SELECT 1 FROM courses WHERE name = 'Kubernetes для DevOps') LIMIT 1;
+
+    INSERT INTO courses (name, description)
+    SELECT * FROM (SELECT 'Terraform IaC', 'Infrastructure as Code') AS tmp
+    WHERE NOT EXISTS (SELECT 1 FROM courses WHERE name = 'Terraform IaC') LIMIT 1;
+
+    INSERT INTO courses (name, description)
+    SELECT * FROM (SELECT 'CI/CD Jenkins/GitLab', 'Автоматизация пайплайнов') AS tmp
+    WHERE NOT EXISTS (SELECT 1 FROM courses WHERE name = 'CI/CD Jenkins/GitLab') LIMIT 1;
+
+    INSERT INTO courses (name, description)
+    SELECT * FROM (SELECT 'Prometheus + Grafana', 'Мониторинг и алертинг') AS tmp
+    WHERE NOT EXISTS (SELECT 1 FROM courses WHERE name = 'Prometheus + Grafana') LIMIT 1;
