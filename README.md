@@ -186,3 +186,21 @@ Returns a JSON payload with real data from MariaDB — meaning the backend succe
 - Passwords in `01-secret-db.yaml` are for testing only; for production, use an external secret store (Vault, Sealed Secrets, SOPS) or create the Secret imperatively (see Step 2).
 - The `02-configmap-db-init.yaml` ConfigMap contains the init SQL that creates the `courses` table with 4 seed rows — these are the exact records visible via `/courses` in the verification above.
 - Resource `requests/limits` are set for the backend; the MariaDB StatefulSet should also have limits tuned to your environment's load.
+
+
+
+
+
+<img width="1540" height="770" alt="Screenshot 2026-07-06 at 21 11 28" src="https://github.com/user-attachments/assets/bd426cb8-3b0a-4ad8-8267-dfd03899538e" />
+
+
+
+
+
+
+
+
+
+
+
+
